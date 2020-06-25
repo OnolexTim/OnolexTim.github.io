@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,8 +14,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
 
+    .logo{
+        color:orangered;
+        font-weight: bold;
+    }
 
-header{
+    .tr{
+        color:black;
+        font-weight: bold;
+    }
+
+    header{
   background-image: url("images/Rectangle 1.jpg");
   width:100%;
   height:300px;
@@ -40,7 +47,7 @@ div img {
 }
 
 .dark-overlay{
-  background-color: rgba(0, 0, 0, 0.658);
+  background-color: rgba(0, 0, 0, 0.493);
   text-align: center;
   font-family: Merriweather;
   font-size: inherit;
@@ -79,91 +86,6 @@ margin:auto;
 }
 
  
-.btn{
-  background: #FF9900;
-border-radius: 5px;
-color:white;
-padding-top:2px;
-padding-bottom: 2px;
-padding-right: 10px;
-padding-left: 10px;
-font-family: Open Sans;
-font-size: small;
-}
-
-footer  {background:#444444;
-  color:white;
-  font-family: Work Sans;
-  padding:18px;
-}
-.logo{
-  color:orangered;
-  font-weight: bold;
-}
-.tr{
-  color:black;
-  font-weight: bold;
-}
-
-.navbar-brand{
-    transform:translateX(-50%);
-    left:50%;
-    position:absolute;
-    margin-top:5px;
-  }
-
-  .navbar-brand {
-    padding:0px;
-  }
-  
-  @media (max-width:1999px){
-    form{ 
-      margin-left:300px;}
-
-      .navbar-toggler-icon {
-        display: none;
-      }
-      
-  }
-  @media (max-width:684px){
-    form{ 
-      margin-left:0px;}
-  }
-
-  @media (max-width:884px){
-    form{ 
-      margin-left:100px;}
-  }
-  @media (max-width:574px){
-    form{ 
-      margin-right:30px;}
-      .navbar-toggler-icon {
-        display: block;
-      }
-  }
-
-  @media (max-width:819px){
-    ul li{ 
-     display:table-row;}
-  }
-  .navbar-left{
-    margin-left: 70px;
-    padding:4px;
-    
-   
-  }
-
-  ul li{
-    margin-right:25px;
-    }
-
-  nav a {color:#808080;
-   
-    
-  }
-.fa-search{
-  cursor:inherit;
-}
 
 .btn{
   background: #FF9900;
@@ -175,7 +97,7 @@ padding-right: 10px;
 padding-left: 10px;
 font-family: Open Sans;
 font-size: small;
-margin-left:100px;
+margin-left:20px;
 
 }
 
@@ -187,182 +109,195 @@ button{
 footer  {background:#444444;
   color:#ffffff;
   font-family: Work Sans;
-  padding:15px;
-  font-size: small;
-  margin-top: 40px;
+  
 }
-.cont{
-  color:#000000;
-  font-weight: bold;
-}
-
-.hm{
-  color:#000000;
-  font-weight: bold;
-  }
 </style>
+
+</head>
+
 <body>
 
-  
 
-  <div class="container bar w-100">
-    <nav class="navbar navbar-expand-sm">
-     
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-          <span class="sr-only"></span>
-          <span class="navbar-toggler-icon"></span>
-         
-          
-        </button>
-        <a class="navbar-brand" href="me.html"> <span class="logo">Zur<span class="tr">Travels</span></a>
-      </div>
-      <div id="navbar" class="collapse navbar-collapse ">
-        <ul class="nav navbar-nav navbar-left">
-          <li class="active"><a href="#"><span class="hm">Home</span></a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Stories</a></li>
-          <li><a href="#">Books</a></li>
-          <li><a href="#"><span class="cont">Contact</span></a></li>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Stories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Book</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right ml-5">
-          <form>
-            <input type="search" value="" placeholder="place your destination here" type="submit">
-            <i class="fa fa-search" class="search"></i>
-          </form>
-        </ul>
-      </div>
     </div>
-    </nav>
-  </div>
- 
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#"><span class="logo">Zur</span><span class="tr">Travels</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <form class="form-inline">
+                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search your destination here..."
+                  aria-label="Search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </form>
+        </ul>
+    </div>
+</nav>
        
+     
 <div class="container">
-<header id="home-section">
-  <div class="dark-overlay">
-    <div class="home-inner-container">
-      <div class="row align-item-center">
-        <div class="col-lg-12">
-          <h1 class="display-4 text-white d-none d-block"><strong>Blog</strong></h1>
+    <header id="home-section">
+      <div class="dark-overlay">
+        <div class="home-inner-container">
+          <div class="row align-item-center">
+            <div class="col-lg-12">
+              <h1 class="display-4 text-white d-none d-block"><strong>Blog</strong></h1>
+            </div>
+          </div>
         </div>
       </div>
+    </header>
     </div>
-  </div>
-</header>
-</div>
-<div class="container mt-5 ">
-<div class="row mx-5 mclass">
-  <div class="col-sm-4">
-    <img src="images/image 8.jpg">
-    <br>
-    <h6>Discovering Asia</h6>
-       <p id="align" >June 20, 2020</p>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita totam suscipit,
-          repellendus recusandae nostrum, sequi odit laborum incidunt temporibus eius porro placeat 
-          laboriosam molestiae.</p>
-          <button class="btn" type="button">Read More  <i class="fa fa-arrow-right"></i>
-          </button>
-    
-  </div>
-  <div class="col-sm-4">
-    <img src="images/image 5.jpg">
-    <br>
-    <h6>Relaxing on the Beach</h6>
-      <p id="align" >June 20, 2020</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita totam suscipit,
-         repellendus recusandae nostrum, sequi odit laborum incidunt temporibus eius porro placeat 
-         laboriosam molestiae.</p>
-         <button class="btn" type="button">Read More  <i class="fa fa-arrow-right"></i>
-         </button>
-  </div>
-  <div class="col-sm-4">
-    <img src="images/image 9.jpg">
-    <br>
-    <h6>Discovering Asia</h6>
-      <p id="align" >June 20, 2020</p>
-      <p>cusandae nostrum, sequi odit laborum incidunt temporibus eius porro placeat 
-         laboriosam molestiaeLorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
-         <button class="btn" type="button">Read More  <i class="fa fa-arrow-right"></i>
-         </button>
-  </div>
-</div>
-</div>  
-   
-    <div class="container mt-4">
-    <div class="row mx-5 mclass">
+    <div class="container mt-5 d-flex">
+    <div class="row justify-content-around  mclass">
       <div class="col-sm-4">
-        <img src="images/image 6.jpg">
+        <img src="images/image 8.jpg">
         <br>
-        <h6>Relaxing on the Beach</h6>
+        <h6>Discovering Asia</h6>
            <p id="align" >June 20, 2020</p>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita totam suscipit,
               repellendus recusandae nostrum, sequi odit laborum incidunt temporibus eius porro placeat 
               laboriosam molestiae.</p>
-              <button class="btn" type="button">Read More  <i class="fa fa-arrow-right"></i>
+              <button class="btn justify-content-between" type="button">Read More  <i class="fa fa-arrow-right"></i>
               </button>
         
       </div>
+      <br>
       <div class="col-sm-4">
-        <img src="images/image 10.jpg">
-        <br>
-        <h6>Discovering Asia</h6>
-        <p id="align" >June 20, 2020</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita totam suscipit,
-           repellendus recusandae nostrum, sequi odit laborum incidunt temporibus eius porro placeat 
-           laboriosam molestiae.</p>
-           <button class="btn" type="button">Read More  <i class="fa fa-arrow-right"></i>
-           </button>
-      </div>
-      <div class="col-sm-4">
-        <img src="images/image 7.jpg">
+        <img src="images/image 5.jpg">
         <br>
         <h6>Relaxing on the Beach</h6>
           <p id="align" >June 20, 2020</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita totam suscipit,
              repellendus recusandae nostrum, sequi odit laborum incidunt temporibus eius porro placeat 
              laboriosam molestiae.</p>
+             <button class="btn align-item-center" type="button">Read More  <i class="fa fa-arrow-right"></i>
+             </button>
+             <br>
+      </div>
+      <div class="col-sm-4">
+        <img src="images/image 9.jpg">
+        <br>
+        <h6>Discovering Asia</h6>
+          <p id="align" >June 20, 2020</p>
+          <p>cusandae nostrum, sequi odit laborum incidunt temporibus eius porro placeat 
+             laboriosam molestiaeLorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
              <button class="btn" type="button">Read More  <i class="fa fa-arrow-right"></i>
              </button>
+             <br>
       </div>
     </div>
-    </div> 
+    </div>  
        
-       
-<br>
-       
-      
-
-
-       <footer>
-        <ul class="list-unstyled">
-          <li class="list-inline-item"> 
-<a class="nav-link" href="#home"></a>
-            &copy;Copyright. ZuriTour</li>
-            <li class="list-inline-item float-right px-2">
-              <a class="nav-link " href="#Home"></a>
-            Contact</li>
-          <li class="list-inline-item float-right px-2">
-            <a class="nav-link " href="#Home"></a>
-          Book</li>
-          <li class="list-inline-item float-right px-2">
-            <a class="nav-link" href="#About"></a>
-          Stories</li>
-          <li class="list-inline-item float-right px-2">
-            <a class="nav-link" href="#Stories"></a>
-          About</li>
-          <li class="list-inline-item float-right px-2">
-            <a class="nav-link " href="#home"></a>
-           Home</li>
-          </ul>
-       </footer>
-       
-       
+        <div class="container mt-4">
+        <div class="row justify-content-around  mclass">
+          <div class="col-sm-4">
+            <img src="images/image 6.jpg">
+            <br>
+            <h6>Relaxing on the Beach</h6>
+               <p id="align" >June 20, 2020</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita totam suscipit,
+                  repellendus recusandae nostrum, sequi odit laborum incidunt temporibus eius porro placeat 
+                  laboriosam molestiae.</p>
+                  <button class="btn" type="button">Read More  <i class="fa fa-arrow-right"></i>
+                  </button>
+            <br>
+          </div>
+          <div class="col-sm-4">
+            <img src="images/image 10.jpg">
+            <br>
+            <h6>Discovering Asia</h6>
+            <p id="align" >June 20, 2020</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita totam suscipit,
+               repellendus recusandae nostrum, sequi odit laborum incidunt temporibus eius porro placeat 
+               laboriosam molestiae.</p>
+               <button class="btn" type="button">Read More  <i class="fa fa-arrow-right"></i>
+               </button>
+               <br>
+          </div>
+          <div class="col-sm-4">
+            <img src="images/image 7.jpg">
+            <br>
+            <h6>Relaxing on the Beach</h6>
+              <p id="align" >June 20, 2020</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita totam suscipit,
+                 repellendus recusandae nostrum, sequi odit laborum incidunt temporibus eius porro placeat 
+                 laboriosam molestiae.</p>
+                 <button class="btn" type="button">Read More  <i class="fa fa-arrow-right"></i>
+                 </button>
+                 <br>
+          </div>
+        </div>
+        </div> 
+           
+           
+    <br>
+           
+          
     
-   <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-      </body>
-      </html>  
+    
+           <footer class="page-footer font-small pt-4">
+               <div class="container">
+        
+              <div class="row d-flex align-items-center"> 
+                  <div class="col-md-7 col-lg-8">
+                      <p class="text-center text-md-left ">
+    <a class="nav-link" href="#home"></a></p>
+                &copy;Copyright. ZuriTour</div>
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline-item">
+                            <li class="list-inline-item">
+                  <a class="nav-link " href="#Home"></a>
+                Contact</li>
+              <li class="list-inline-item">
+                <a class="nav-link " href="#Home"></a>
+              Book</li>
+              <li class="list-inline-item">
+                <a class="nav-link" href="#About"></a>
+              Stories</li>
+              <li class="list-inline-item">
+                <a class="nav-link" href="#Stories"></a>
+              About</li>
+              <li class="list-inline-item">
+                <a class="nav-link " href="#home"></a>
+               Home</li>
+              </ul>
+              </div>
+              </div>
+              </div>
+           </footer>      
+       
 
+
+
+
+
+
+   <!-- JS, Popper.js, and jQuery -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+     </body>
+     </html>  
